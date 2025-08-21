@@ -8,6 +8,6 @@ on:
 jobs:
   test-types:
     runs-on: ubuntu-lates
-  steps:
-    -name: test types
-     run: echo "testing types of activity in even github"
+    steps:
+     - name: test types
+       run: echo "testing types of activity in even github"
