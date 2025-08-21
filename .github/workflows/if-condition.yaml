@@ -9,6 +9,6 @@ jobs:
         id: if-test
         run: echo "test-completed" 
       - name: check ic condition
-        if: failure() && steps.id-test.outcome == "failure"
+        if: failure() && steps.if-test.outcome == "failure"
         run: echo "if condition tested"
     
