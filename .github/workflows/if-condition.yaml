@@ -2,7 +2,7 @@ name: if condition
 on:
   workflow_dispatch:
 jobs:
-  artifacts-test:
+  if-condition:
     runs-on: ubuntu-latest
     steps:
       - name: if condition check
