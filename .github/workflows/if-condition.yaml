@@ -9,6 +9,6 @@ jobs:
         id: if-test
         run: echo "test-completed" 
       - name: Upload test.yaml
-        if: steps.id-test.outcome == "failure"
+       # if: steps.id-test.outcome == "failure"
         run: echo "if condition tested"
     
