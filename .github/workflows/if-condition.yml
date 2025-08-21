@@ -1,0 +1,14 @@
+name: if condition
+on:
+  workflow_dispatch:
+jobs:
+  artifacts-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: if condition check
+        id: if-test
+        run: echo "test-completed" 
+      - name: Upload test.yaml
+        if: steps.id-test.outcome == "failure"
+        run: echo "if condition tested"
+    
