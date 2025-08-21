@@ -5,6 +5,11 @@ jobs:
     strategy:
       matrix:
         subject: [eng,math,science,sst,evs]
+        include:  # this will include single element
+         - subject: hindi
+        exclude: #this will esclude single element
+        - subject: evs
+        
     runs-on: ubuntu-latest
     steps:
       - name: test-metrix
