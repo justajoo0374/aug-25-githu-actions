@@ -1,11 +1,11 @@
 name: test workflow
 on: workflow_dispatch
 jobs:
-  first-job
-    runs-on: ubuntu-latest
+  first-job:
+    runs-on:ubuntu-latest:
     steps:
-    - name: test scho
-      run: echo "hello"
-   - name: test done
-      run: "test done"
+     - name: test scho
+       run: echo "hello"
+     - name: test done
+       run: "test done"
   
