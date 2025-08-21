@@ -1,10 +1,10 @@
 name: actvity types
 on:
+  workflow_dispatch:
   push:
     types:
       - opened
       - edited
-  workflow_dispatch:
 jobs:
   test-types:
     runs-on: ubuntu-lates
