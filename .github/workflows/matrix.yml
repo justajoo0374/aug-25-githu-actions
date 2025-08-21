@@ -1,0 +1,13 @@
+name: matrix 
+on: workflow_dispatch
+jobs:
+  matrix-test:
+    strategy:
+      matrix:
+        subject: [eng,math,science,sst,evs]
+    runs-on: ubuntu-latest
+    steps:
+      - name: test-metrix
+        run: ${{ matrix.subject}}
+        
+  
