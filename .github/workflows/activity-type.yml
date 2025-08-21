@@ -1,0 +1,13 @@
+name: actvity types
+on:
+  push:
+    types:
+      - opened
+      - edited
+  workflow_dispatch:
+jobs:
+  test-types:
+    runs-on: ubuntu-lates
+  steps:
+    -name: test types
+     run: echo "testing types of activity in even github"
