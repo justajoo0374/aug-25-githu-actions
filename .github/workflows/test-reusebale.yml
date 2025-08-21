@@ -3,4 +3,6 @@ on: workflow_dispatch
 jobs:
   test:
        uses: ./.github/workflows/reuseable.yaml
+       with:
+        test-name: "demo-test"
        
