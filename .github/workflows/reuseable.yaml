@@ -12,9 +12,7 @@ jobs:
     steps:
       - name: test-resuable
         run: echo "tsetinf resuable worflow"
-      - name: get code
-        uses: actions/download-artifact@v4
-        with:
-          name: ${{ inputs.test-name }}
-      - name: list
-        run: ls
+      - name: test-name
+        run: echo "test name is ${{ inputs.test-name }}"
+ 
+
