@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: download test-artifaacts
-        uses: actions/download@v4
+        uses: actions/download-artifact@v4
         with:
           name: test-artifacts
       - name: ouput of content
