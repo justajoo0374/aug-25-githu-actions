@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: continue-on-error  check
-        continue-on-error: true
+        continue-on-error: true ## in continue on error complete workflow is marked as successful evenif any step fails 
         id: if-test
         run: echo 'test-completed
       - name: check contiue on error
