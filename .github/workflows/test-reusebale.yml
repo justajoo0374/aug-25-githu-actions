@@ -1,8 +1,14 @@
 name: test for resunable workflow
-on: workflow_dispatch
+on: 
+  workflow_dispatch:
+    inputs:
+      test-name:
+        description: this is for thestion purpose so provide name
+        type: string
+        required: true
 jobs:
   test:
        uses: ./.github/workflows/reuseable.yaml
        with:
-        test-name: "demo-test"
+        test-name: ${{ inputs.test.name }}
        
