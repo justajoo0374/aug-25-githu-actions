@@ -5,8 +5,8 @@ jobs:
   artifacts-test:
     runs-on: ubuntu-latest
     steps:
-      #- name: Checkout repo
-       # uses: actions/checkout@v4
+      - name: Checkout repo
+        uses: actions/checkout@v4
       - name: test-artifaacts
         run: echo "demo" > test.yaml
       - name: Upload test.yaml
