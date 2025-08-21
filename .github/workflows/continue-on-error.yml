@@ -1,14 +1,14 @@
-name: if condition
+name: continue-on-error
 on:
   workflow_dispatch:
 jobs:
-  if-condition:
+  continue-on-error:
     runs-on: ubuntu-latest
     steps:
-      - name: if condition check
+      - name: continue-on-error  check
         continue-on-error: true
         id: if-test
         run: echo 'test-completed
-      - name: check ic condition
+      - name: check contiue on error
        # if: failure() && steps.if-test.outcome == 'failure'
         run: echo 'if condition tested'
