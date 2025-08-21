@@ -8,6 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: test-metrix
-        run: ${{ matrix.subject}}
+        run: echo "subject inthe class are ${{ matrix.subject}}"
         
   
